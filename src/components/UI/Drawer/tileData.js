@@ -8,28 +8,34 @@ import ContactIcon from '@material-ui/icons/ContactMail';
 import HomeIcon from '@material-ui/icons/Home';
 import SecurityIcon from '@material-ui/icons/Security';
 import InfoIcon from '@material-ui/icons/Info';
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 
 export const mailFolderListItems = (
   <div>
+  <NavLink  style={{textDecoration:'none'}}  to="/">
     <ListItem button>
       <ListItemIcon>
       <HomeIcon/>
       </ListItemIcon>
       <ListItemText primary="Home" />
     </ListItem>
+    </NavLink>
+    <NavLink style={{textDecoration:'none'}} to="/auth">
     <ListItem button>
       <ListItemIcon>
       <SecurityIcon/>
       </ListItemIcon>
       <ListItemText primary="Login / Register" />
     </ListItem>
+    </NavLink>
     <ListItem button>
       <ListItemIcon>
         <ContactIcon />
       </ListItemIcon>
       <ListItemText primary="Contact" />
     </ListItem>
+
     <ListItem button>
       <ListItemIcon>
         <InfoIcon/>

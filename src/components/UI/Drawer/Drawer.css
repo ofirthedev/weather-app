@@ -8,3 +8,8 @@
     position:relative;
     background-color: transparent;
 }
+.inputstyle:focus{
+    border:2px solid rgb(221, 107, 107);
+   
+
+}
